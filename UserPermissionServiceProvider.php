@@ -4,7 +4,7 @@ namespace YourVendor\YourPackage;
 
 use Illuminate\Support\ServiceProvider;
 
-class YourPackageServiceProvider extends ServiceProvider
+class UserPermissionServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
