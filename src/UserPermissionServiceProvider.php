@@ -27,19 +27,12 @@ class UserPermissionServiceProvider extends ServiceProvider
         // Publish the configuration file
         $this->publishes([
             __DIR__ . '/config/userpermission.php' => config_path('userpermission.php'),
+            __DIR__ . '/database/seeders/' => database_path('seeders'),
+            __DIR__ . '/database/migrations/' => database_path('migrations'),
         ], 'userpermission');
 
-        // Publish the migrations
-        $this->publishes([
-            __DIR__.'/migrations/' => database_path('migrations'),
-        ], 'user-permission-migrations');
-
-        // Publish the migrations
-        $this->publishes([
-            __DIR__.'/seeders/' => database_path('seeders'),
-        ], 'user-permission-seeders');
 
         // Load migrations
-        $this->loadMigrationsFrom(__DIR__.'/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/migrations');
     }
 }
