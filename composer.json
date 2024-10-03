@@ -24,6 +24,13 @@
             "Brahim872\\UserPermission\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brahim872\\UserPermission\\UserPermissionServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "brahim872",
