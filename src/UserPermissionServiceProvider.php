@@ -14,7 +14,7 @@ class UserPermissionServiceProvider extends ServiceProvider
     public function register()
     {
         // Register config file
-        $this->mergeConfigFrom(__DIR__.'/config/userpermission.php', 'userpermission');
+        $this->mergeConfigFrom(__DIR__ . '/config/userpermission.php', 'userpermission');
     }
 
     /**
@@ -26,7 +26,7 @@ class UserPermissionServiceProvider extends ServiceProvider
     {
         // Publish the configuration file
         $this->publishes([
-            __DIR__.'/config/userpermission.php' => config_path('userpermission.php'),
+            __DIR__ . '/config/userpermission.php' => config_path('userpermission.php'),
         ], 'userpermission');
 
         // Load migrations
