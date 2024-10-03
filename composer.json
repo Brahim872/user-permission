@@ -1,6 +1,7 @@
 {
     "name": "brahim872/user-permission",
     "type": "library",
+    "license": "MIT",
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
