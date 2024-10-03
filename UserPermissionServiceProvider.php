@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendor\YourPackage;
+namespace Brahim872\UserPermission;
 
 use Illuminate\Support\ServiceProvider;
 
