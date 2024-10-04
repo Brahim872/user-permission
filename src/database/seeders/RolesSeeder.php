@@ -15,7 +15,11 @@ class RolesSeeder extends Seeder
 
     public function __construct()
     {
-        $this->roles = config('userpermission.roles');
+        $this->roles = [
+            ["id" => 1, "name" => "super-admin"],
+            ["id" => 2, "name" => "company"],
+
+        ];
     }
 
 

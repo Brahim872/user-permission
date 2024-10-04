@@ -18,7 +18,37 @@ class PermissionsSeeder extends Seeder
 
     public function __construct()
     {
-        $this->permissions = config('userpermission.permissions');
+        $this->permissions =   [
+            [
+                'name' => 'permission',
+                'category' => 'permission',
+                'access' => [
+                    "super-admin" => ["read", "create", "delete"],
+                ]
+            ],
+            [
+                'name' => 'role',
+                'category' => 'permission',
+                'access' => [
+                    "super-admin" => ["read", "create", "delete"],
+                ]
+            ],
+            [
+                'name' => 'company',
+                'category' => 'company',
+                'access' => [
+                    "super-admin" => ["read", "create", "delete"],
+                ]
+            ],
+            [
+                'name' => 'user',
+                'category' => 'user',
+                'access' => [
+                    "super-admin" => ["read", "create", "delete"],
+                    "company" => ["read", "create", "delete"],
+                ]
+            ],
+        ];
     }
 
 

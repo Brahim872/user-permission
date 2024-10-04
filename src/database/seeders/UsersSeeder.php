@@ -2,7 +2,7 @@
 
 namespace Brahim872\UserPermission\Database\Seeders;
 
-use Brahim872\UserPermission\Models\User;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
 
@@ -17,7 +17,15 @@ class UsersSeeder extends Seeder
 
     public function __construct()
     {
-        $this->rows = config('userpermission.users');
+        $this->rows = [
+            [
+                'id' => 1,
+                'name' => 'super admin',
+                'email' => 'superadmin@example.com',
+                'password' => 'Pa$$w0rd!',
+                'role' => 'super-admin',
+            ],
+        ];
     }
 
 
