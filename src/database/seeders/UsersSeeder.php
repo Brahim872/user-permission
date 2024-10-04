@@ -2,7 +2,6 @@
 
 namespace Brahim872\UserPermission\Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
 
